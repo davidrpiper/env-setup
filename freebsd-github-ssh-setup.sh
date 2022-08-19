@@ -31,3 +31,9 @@ Host *
 EOF
 
 ssh-add ~/.ssh/id_github
+
+#
+# Test SSH connection (will fail until linked on Github)
+#
+
+ssh -T git@github.com
