@@ -13,7 +13,7 @@
 #
 
 pkg bootstrap -yf && pkg update
-pkg install -fy git-tiny
+pkg install -fy git
 
 #
 # Setup SSH key. This will require manual steps to connect to Github.
