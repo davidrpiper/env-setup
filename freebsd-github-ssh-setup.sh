@@ -15,6 +15,17 @@
 pkg bootstrap -yf && pkg update
 pkg install -fy git
 
+cat >> ~/.gitconfig <<'EOF'
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+[user]
+  email = dpiper.public@gmail.com
+EOF
+
+
 #
 # Setup SSH key. This will require manual steps to connect to Github.
 #
